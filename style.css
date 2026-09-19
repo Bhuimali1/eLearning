@@ -69,11 +69,13 @@ nav a.active {
   width: 115px;
   background-color: white;
   display: none;
+  z-index: 1000;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 .dropdown-menu li {
   width: 100%;
+  height: auto;
 }
 
 .dropdown-menu a {
