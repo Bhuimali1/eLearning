@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eLearning</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+
+    <ul class="sidebar">
+            
+      <li onclick=hideSidebar()>
+        <a href="#">
+          <img src="./images/cross.png" alt="Menu">
+        </a>
+      </li>
+
+      <li><a href="#" class="active">HOME</a></li>
+      <li> <a href="#">ABOUT</a></li>
+      <li> <a href="#">COURSES</a></li>
+
+      <li class="dropdown">
+  <a href="#">PAGES <img src="./images/dropdown.png" alt="Dropdown"></a>
+
+  <ul class="dropdown-menu">
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+  </ul>
+</li>
+
+      <li> <a href="#">CONTACTS</a></li>
+      <li class="join-btn"> <a href="#">Join Now➝</a></li>
+    </ul>
+
+
+    <ul>
+      <li class="logo">
+  <a href="#">
+    <img src="./images/elearning logo.png" alt="eLearning">
+  </a>
+</li>
+      <li class="hideOnMobile"><a href="#" class="active">HOME</a></li>
+      <li class="hideOnMobile"> <a href="#">ABOUT</a></li>
+      <li class="hideOnMobile"> <a href="#">COURSES</a></li>
+
+      <li class="hideOnMobile dropdown">
+  <!-- <a href="#">PAGES</a> -->
+   <a href="#">PAGES <img src="./images/dropdown.png" alt="Dropdown"></a>
+
+  <ul class="dropdown-menu">
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+  </ul>
+</li>
+
+      <li class="hideOnMobile"> <a href="#">CONTACTS</a></li>
+      <li class="hideOnMobile"><a href="#" class="join-btn">Join Now➝</a></li>
+      <li class="menu-button" onclick=showSidebar()>
+  <a href="#">
+    <img src="./images/menu.png" alt="Menu">
+  </a>
+</li>
+
+    </ul>
+  </nav>
+
+  <script>
+    function showSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+    }
+
+     function hideSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+  </script>
+
+  <!-- HERO SECTION -->
+<div class="heroSection">
+
+
+  <div class="heroContent">
+  <p> BEST ONLINE COURSES</p>
+  <h1>Get Educated Online <br> From Your Home</h1>
+  <span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis sit, consequuntur laudantium voluptatem numquam tempora vel perferendis, aliquam assumenda saepe enim sint, quaerat illum? Enim ratione porro eaque sit accusamus?</span>
+  
+
+  <div>
+    <div class="heroBtn">
+    <a href="">Read More</a>
+    <a href="">Join Now</a>
+  </div>
+  </div>
+  <div class="heroSlideBtn">
+    <a href=""> <img src="./images/angleLeft.png" alt="previous"> </a>
+    <a href=""><img src="./images/angleRight.png" alt="next"></a>
+    </div>
+
+</div>
+
+<!-- Feature section -->
+ <section class="features">
+  <div class="featuresCard">
+    <img src="./images/features/capIcon.png" alt="Skilled Instructors">
+    <h3>Skilled Instructors</h3>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dignissimos vitae consequatur animi sequi vero placeat nulla .</p>
+  </div>
+
+  <div class="featuresCard">
+    <img src="./images/features/globeIcon.png" alt="Online Classes">
+    <h3>Online Classes</h3>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dignissimos vitae consequatur animi sequi vero placeat nulla .</p>
+  </div>
+  
+  <div class="featuresCard">
+    <img src="./images/features/homeIcon.png" alt="Home Projects">
+    <h3>Home Projects</h3>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dignissimos vitae consequatur animi sequi vero placeat nulla .</p>
+  </div>
+
+  <div class="featuresCard">
+    <img src="./images/features/bookIcon.png" alt="Book Library">
+    <h3>Book Library</h3>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dignissimos vitae consequatur animi sequi vero placeat nulla .</p>
+  </div>
+ </section>
+
+<!-- About Section -->
+ <section class="about">
+  <div class="aboutContainer">
+    <img src="images/about/about1.jpg" alt="">
+
+    <div class="aboutContent">
+      <p class="aboutTitle">ABOUT US</p>
+      <h3> Welcome to eLearning</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi facere nemo quaerat. Sunt, minima similique vel rem delectus dicta explicabo corporis excepturi? Cumque, quos aliquid! Harum iste eius obcaecati atque?</p>
+
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias exercitationem et sint fugiat doloribus enim illo iure hic quam totam cum voluptate, quibusdam, quod facere nisi. Molestias ullam ab suscipit.</p>
+
+
+
+    </div>
+  </div>
+
+
+ </section>
+
+</body>
+</html>
+
